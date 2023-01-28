@@ -256,10 +256,10 @@
     <None Include="Resources\2976165861_A_colorful_boiling_evaporating_flask_with_bubbles_coming_from_it_in_digital_painting_.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Orb_painting.png" />
+    <None Include="Resources\Orb_painting.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Orb_painting-1.png" />
+    <None Include="Resources\Orb_painting-1.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
