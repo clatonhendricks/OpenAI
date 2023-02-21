@@ -1,0 +1,12 @@
+C:\Users\clatonh\source\repos\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.AssemblyReference.cache
+C:\Users\clatonh\source\repos\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.CoreCompileInputs.cache
+C:\Users\clatonh\source\repos\WordWebAddIn1\WordWebAddIn1\bin\Debug\Images\tiny_robot.png
+E:\OneDrive\LiveMesh\AI, DS, Python\OpenAI\WordWebAddIn1\WordWebAddIn1\bin\Debug\Images\tiny_robot.png
+E:\OneDrive\LiveMesh\AI, DS, Python\OpenAI\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.AssemblyReference.cache
+E:\OneDrive\LiveMesh\AI, DS, Python\OpenAI\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.CoreCompileInputs.cache
+E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\WordWebAddIn1\WordWebAddIn1\bin\Debug\Images\tiny_robot.png
+E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.AssemblyReference.cache
+E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.CoreCompileInputs.cache
+D:\WordWebAddIn1\WordWebAddIn1\bin\Debug\Images\tiny_robot.png
+D:\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.AssemblyReference.cache
+D:\WordWebAddIn1\WordWebAddIn1\obj\Debug\WordWebAddIn1.csproj.CoreCompileInputs.cache
