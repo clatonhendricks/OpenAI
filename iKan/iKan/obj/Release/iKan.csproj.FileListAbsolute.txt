@@ -1,0 +1,4 @@
+E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKan\obj\Release\iKan.csproj.AssemblyReference.cache
+E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKan\obj\Release\iKan.csproj.CoreCompileInputs.cache
+C:\Users\clatonh\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKan\obj\Release\iKan.csproj.AssemblyReference.cache
+C:\Users\clatonh\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKan\obj\Release\iKan.csproj.CoreCompileInputs.cache

@@ -99,7 +99,7 @@ var messageBanner;
                                 document.getElementById('circleloader-1').style.visibility = "hidden";
                             },
                             function (error) {
-                                document.getElementById('message').innerText = "error";
+                                errorHandler(error.message);
                                 document.getElementById('circleloader-1').style.visibility = "hidden";
                             }
                         );
@@ -160,6 +160,8 @@ var messageBanner;
     }
 
     function btnSaveSettings() {
+
+        localStorage.clear();
         OKey = document.getElementById('txtKey').value;
         maxTokens = document.getElementById('txtmaxtokens').value;
 
