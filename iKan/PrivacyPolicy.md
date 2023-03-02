@@ -1,4 +1,4 @@
-Privacy Policy
+**Privacy Policy**
 
 Last updated: 3/1/2023
 
@@ -58,6 +58,6 @@ a prominent notice on our website.
 
 If you have any questions about this Privacy Policy, please contact us.
 
-Email - Clatonhendricks@msn.com 
+Email - clatonhendricks@msn.com 
 Twitter - [@clatonhendricks](http://twitter.com/clatonhendricks)
 LinkedIn - [@clatonhendricks](http://www.linkedin.com/in/clatonhendricks)
