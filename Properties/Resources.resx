@@ -121,10 +121,7 @@
   <data name="2976165861_A_colorful_boiling_evaporating_flask_with_bubbles_coming_from_it_in_digital_painting_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2976165861_A_colorful_boiling_evaporating_flask_with_bubbles_coming_from_it_in_digital_painting_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Orb_painting" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Orb_painting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Orb_painting-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Orb_painting-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Orb_painting-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Orb_painting-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

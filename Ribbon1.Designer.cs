@@ -36,8 +36,8 @@
         {
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
-            this.btnAbout = this.Factory.CreateRibbonButton();
             this.btnDalle = this.Factory.CreateRibbonButton();
+            this.btnAbout = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             this.SuspendLayout();
@@ -56,21 +56,21 @@
             this.group1.Label = "Dall.E 2 PPT";
             this.group1.Name = "group1";
             // 
+            // btnDalle
+            // 
+            this.btnDalle.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.btnDalle.Image = global::DalleWeb.Properties.Resources.Orb_painting_11;
+            this.btnDalle.Label = "Dream Image";
+            this.btnDalle.Name = "btnDalle";
+            this.btnDalle.ShowImage = true;
+            this.btnDalle.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnDalle_Click);
+            // 
             // btnAbout
             // 
             this.btnAbout.Label = "About";
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.ShowImage = true;
             this.btnAbout.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnAbout_Click);
-            // 
-            // btnDalle
-            // 
-            this.btnDalle.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
-            this.btnDalle.Image = global::DalleWeb.Properties.Resources.Orb_painting_1;
-            this.btnDalle.Label = "Dream Image";
-            this.btnDalle.Name = "btnDalle";
-            this.btnDalle.ShowImage = true;
-            this.btnDalle.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnDalle_Click);
             // 
             // Ribbon1
             // 

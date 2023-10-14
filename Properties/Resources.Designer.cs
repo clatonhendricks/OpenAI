@@ -74,19 +74,9 @@ namespace DalleWeb.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Orb_painting {
+        internal static System.Drawing.Bitmap Orb_painting_11 {
             get {
-                object obj = ResourceManager.GetObject("Orb_painting", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Orb_painting_1 {
-            get {
-                object obj = ResourceManager.GetObject("Orb_painting-1", resourceCulture);
+                object obj = ResourceManager.GetObject("Orb_painting-11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
