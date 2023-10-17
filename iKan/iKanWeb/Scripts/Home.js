@@ -25,7 +25,8 @@ var messageBanner;
 
             if (Office.context.requirements.isSetSupported('WordApi', '1.1')) {
                 // Do something that is only available via the new APIs.
-                $('#rewrite').click(rewrite);
+                $('#btnrewrite').click(btnrewrite);
+                $('#btnInsert').click(btnInsert);
                 $('#btnIdeas').click(btnIdeas);
                 $('#btnSaveSettings').click(btnSaveSettings);
                 $('#supportedVersion').html('This code is using Word 2016 or later.');
@@ -49,33 +50,44 @@ var messageBanner;
     }
 
     async function btnIdeas() {
-        document.getElementById('circleloader-2').style.visibility = "visible";
-        await Word.run(async (context) => {
+        if (OKey != null) {
 
-            returnResult = "";
-            const body = context.document.body;
+            document.getElementById('circleloader-2').style.visibility = "visible";
+            await Word.run(async (context) => {
 
-            callGPT3(document.getElementById('txtIdeas').value, "circleloader-2").then(
-                function (value) {
-                    body.insertText(returnResult, Word.InsertLocation.end);
-                    context.sync();
-                    document.getElementById('circleloader-2').style.visibility = "hidden";
-                },
-                function (error) { document.getElementById('message').innerText = "error"; }
-            );
+                returnResult = "";
+                const body = context.document.body;
 
-                 })
-            .catch(function (error) {
-                //console.log('Error: ' + JSON.stringify(error));
-                errorHandler('Error: ' + JSON.stringify(error));
-                if (error instanceof OfficeExtension.Error) {
-                    //console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-                    errorHandler('Debug info: ' + JSON.stringify(error.debugInfo));
-                }
-            });
+                callGPT3(document.getElementById('txtIdeas').value, "circleloader-2").then(
+                    function (value) {
+                        body.insertText(returnResult, Word.InsertLocation.end);
+                        context.sync();
+                        document.getElementById('circleloader-2').style.visibility = "hidden";
+                    },
+                    function (error) { document.getElementById('message').innerText = "error"; }
+                );
+
+            })
+                .catch(function (error) {
+                    //console.log('Error: ' + JSON.stringify(error));
+                    errorHandler('Error: ' + JSON.stringify(error));
+                    if (error instanceof OfficeExtension.Error) {
+                        //console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+                        errorHandler('Debug info: ' + JSON.stringify(error.debugInfo));
+                    }
+                });
+        } else {
+            errorHandler("Please add a OpenAI key in the Settings.");
+            }
+
     }
 
-    function rewrite() {
+    function btnrewrite() {
+        write("", false);
+        const buttonInsert = document.getElementById('btnInsert')
+
+        if (buttonInsert.style.visibility == "visible") { buttonInsert.style.visibility = "hidden"; };
+
         if (OKey != null) {
             document.getElementById('circleloader-1').style.visibility = "visible";
             var prompt = "Rewrite the following \n";
@@ -96,11 +108,15 @@ var messageBanner;
                         callGPT3(prompt, "circleloader-1").then(
                             function (value) {
                                 write(returnResult, false);
+                                //button.id = 'btnInsert';
+                                //button.textContent = "Insert into document";
                                 document.getElementById('circleloader-1').style.visibility = "hidden";
+                                document.getElementById('btnInsert').style.visibility = "visible";
                             },
                             function (error) {
                                 errorHandler(error.message);
                                 document.getElementById('circleloader-1').style.visibility = "hidden";
+                                document.getElementById('btnInsert').style.visibility = "hidden";
                             }
                         );
 
@@ -113,6 +129,30 @@ var messageBanner;
             errorHandler("Please add a OpenAI key in the Settings.");
 
         }
+
+    }
+
+    async function btnInsert() {
+
+
+
+        //const body = context.document.body;
+        //body.insertText(returnResult, Word.InsertLocation.end);
+        //context.sync();
+
+        await Word.run(async (context) => {
+
+            // Create a proxy object for the document body.
+            const body = context.document.body;
+
+            // Queue a command to insert text in to the beginning of the body.
+            body.insertText(returnResult, Word.InsertLocation.end);
+
+            // Synchronize the document state by executing the queued commands,
+            // and return a promise to indicate task completion.
+            await context.sync();
+           
+        });
 
     }
 
@@ -134,21 +174,24 @@ var messageBanner;
 
             document.getElementById(loaderName).style.visibility = "visible";
             const params = {
-                "model": "text-davinci-003",
-                "prompt": prompt,
+                "model": "gpt-3.5-turbo",
+                "messages": [
+                    { "role": "system", "content": "You are a helpful English professor ." },
+                    { "role": "user", "content": +'"'  + prompt +'"'  }
+                    ],
                 "max_tokens": parseInt(maxTokens),
                 "temperature": 0.7,
                 "frequency_penalty": 0.5
             };
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "https://api.openai.com/v1/completions", true);
+            xhr.open("POST", "https://api.openai.com/v1/chat/completions", true);
             xhr.setRequestHeader("Content-Type", "application/json");
             xhr.setRequestHeader("Authorization", `Bearer ${OKey}`);  
             xhr.send(JSON.stringify(params));
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4 && xhr.status === 200) {
                     var json = JSON.parse(xhr.responseText);
-                    returnResult = json.choices[0].text;
+                    returnResult = json.choices[0].message.content // json.choices[0].text;
                     resolve("done!");
                 }
             };

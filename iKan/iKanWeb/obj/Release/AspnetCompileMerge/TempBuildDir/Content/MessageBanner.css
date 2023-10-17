@@ -11,7 +11,7 @@
     font-weight: normal;
     position: relative;
     border-bottom: 1px solid #767676;
-    background-color: #eff6fc;
+    background-color: #f5cccc;
     min-width: 320px;
     width: 98%;
     height: 52px;
@@ -21,6 +21,7 @@
     animation-duration: 0.367s;
     animation-timing-function: cubic-bezier(0.1, 0.25, 0.75, 0.9);
     animation-fill-mode: both;
+    display: none;
 }
 
 .MessageBanner .ms-Icon {

@@ -11,3 +11,5 @@ C:\Users\clatonh\OneDrive\LiveMesh\AI_DS_Python\OpenAI\iKan\iKan\obj\Debug\iKan.
 C:\Users\clatonh\OneDrive\LiveMesh\AI_DS_Python\OpenAI\iKan\iKan\obj\Debug\iKan.csproj.CoreCompileInputs.cache
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKan\obj\Debug\iKan.csproj.AssemblyReference.cache
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKan\obj\Debug\iKan.csproj.CoreCompileInputs.cache
+C:\Users\clatonh\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKan\obj\Debug\iKan.csproj.AssemblyReference.cache
+C:\Users\clatonh\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKan\obj\Debug\iKan.csproj.CoreCompileInputs.cache

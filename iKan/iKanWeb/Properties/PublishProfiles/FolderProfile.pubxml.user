@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>\\CLATONH_DESK\iKan_manifest</_PublishTargetUrl>
-    <History>True|2023-02-14T01:16:18.8759324Z;</History>
+    <History>False|2023-04-08T06:53:25.7509948Z;True|2023-02-13T17:16:18.8759324-08:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>

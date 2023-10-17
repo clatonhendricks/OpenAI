@@ -16,7 +16,7 @@
     <AssemblyName>iKan</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress />
+    <Use64BitIISExpress>true</Use64BitIISExpress>
     <IISExpressSSLPort>44345</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -112,6 +112,7 @@
     <Content Include="Functions\FunctionFile.js" />
     <Content Include="Content\Home.css" />
     <Content Include="Home.html" />
+    <Content Include="Images\RobotAI64x64.png" />
     <Content Include="Scripts\Home.js" />
     <Content Include="Images\AddinIcon.png" />
     <Content Include="Images\Close.png" />

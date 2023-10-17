@@ -1,2 +1,2 @@
 bin\Release\OfficeAppManifests\iKanManifest.xml
-E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKan\bin\Release\iKan.debugapp
+C:\Users\clatonh\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKan\bin\Release\iKan.debugapp

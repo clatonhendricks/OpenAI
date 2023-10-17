@@ -14,20 +14,20 @@
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
   <Version>1.0.0.0</Version>
-  <ProviderName>Claton Hendricks(clatonh)</ProviderName>
+  <ProviderName>Claton Hendricks</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
   <DisplayName DefaultValue="iKan AI assistant" />
   <Description DefaultValue="iKan uses OpenAI to improve the quality of your documents"/>
   <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
-  <IconUrl DefaultValue="~remoteAppUrl/Images/RobotAI32x32.png" />
+  <IconUrl DefaultValue="https://clatonhendricks.github.io/Images/RobotAI32x32.png" />
+  <HighResolutionIconUrl DefaultValue="https://clatonhendricks.github.io/Images/RobotAI80x80.png" />
 
-  <SupportUrl DefaultValue="https://github.com/clatonhendricks/OpenAI/blob/main/iKan/FAQ.md" />
+  <SupportUrl DefaultValue="https://github.com/clatonhendricks/OpenAI/issues/" />
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
   <AppDomains>
-    <AppDomain>AppDomain1</AppDomain>
-    <AppDomain>AppDomain2</AppDomain>
-    <AppDomain>AppDomain3</AppDomain>
+    <AppDomain>https://github.com/*</AppDomain>
+    <AppDomain>https://openai.org/*</AppDomain>
   </AppDomains>
   <!--End Basic Settings. -->
   
@@ -36,7 +36,7 @@
     <Host Name="Document" />
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="~remoteAppUrl/Home.html" />
+    <SourceLocation DefaultValue="https://clatonhendricks.github.io/Home.html" />
   </DefaultSettings>
   <!-- End TaskPane Mode integration.  -->
 
@@ -116,13 +116,13 @@
     <!-- You can use resources across hosts and form factors. -->
     <Resources>
       <bt:Images>
-        <bt:Image id="iKan.tpicon_16x16" DefaultValue="~remoteAppUrl/Images/RobotAI16x16.png" />
-        <bt:Image id="iKan.tpicon_32x32" DefaultValue="~remoteAppUrl/Images/RobotAI32x32.png" />
-        <bt:Image id="iKan.tpicon_80x80" DefaultValue="~remoteAppUrl/Images/RobotAI80x80.png" />
+        <bt:Image id="iKan.tpicon_16x16" DefaultValue="https://clatonhendricks.github.io/Images/RobotAI16x16.png" />
+        <bt:Image id="iKan.tpicon_32x32" DefaultValue="https://clatonhendricks.github.io/Images/RobotAI32x32.png" />
+        <bt:Image id="iKan.tpicon_80x80" DefaultValue="https://clatonhendricks.github.io/Images/RobotAI80x80.png" />
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="iKan.DesktopFunctionFile.Url" DefaultValue="~remoteAppUrl/Functions/FunctionFile.html" />
-        <bt:Url id="iKan.Taskpane.Url" DefaultValue="~remoteAppUrl/Home.html" />
+        <bt:Url id="iKan.DesktopFunctionFile.Url" DefaultValue="https://clatonhendricks.github.io/Functions/FunctionFile.html" />
+        <bt:Url id="iKan.Taskpane.Url" DefaultValue="https://clatonhendricks.github.io/Home.html" />
         <bt:Url id="iKan.GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
       </bt:Urls>
       <!-- ShortStrings max characters==125. -->
@@ -134,7 +134,7 @@
       <!-- LongStrings max characters==250. -->
       <bt:LongStrings>
         <bt:String id="iKan.TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane" />
-        <!--<bt:String id="iKan.GetStarted.Description" DefaultValue="Your sample add-in loaded succesfully. Go to the HOME tab and click the 'Show Taskpane' button to get started." />-->
+        <bt:String id="iKan.GetStarted.Description" DefaultValue="iKan add-in loaded succesfully. Go to the HOME tab and click the 'iKan AI Assistant' button to get started." />
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>

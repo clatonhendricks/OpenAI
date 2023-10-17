@@ -2,4 +2,5 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/iKan/iKan/bin/Debug/Document1-Clatonbook.docx
+/iKan/iKan/bin/Debug/*
+/iKan/iKan/bin/Release/*

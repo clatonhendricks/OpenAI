@@ -58,6 +58,7 @@ E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\iKan\WordWebAddIn1Web\obj\Release\iKanW
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\iKan\WordWebAddIn1Web\obj\Release\iKanWeb.csproj.CopyComplete
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\iKan\WordWebAddIn1Web\obj\Release\iKan.dll
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\iKan\WordWebAddIn1Web\obj\Release\iKan.pdb
+E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\iKan.dll.config
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\iKan.dll
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\iKan.pdb
@@ -72,7 +73,6 @@ E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\r
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\roslyn\Microsoft.CSharp.Core.targets
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 E:\OneDrive\LiveMesh\AI_DS_Python\OpenAI\OpenAI-GitHub\OpenAI\iKan\iKanWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
