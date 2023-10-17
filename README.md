@@ -1,2 +1,0 @@
-# OpenAI
-Experiments with OpenAI
