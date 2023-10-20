@@ -24,7 +24,7 @@ Welcome to the DALL-E to PowerPoint add-in, a seamless integration that allows u
 5. Click "Submit" to send your prompt to Dall.E model to create your image. 
 6. Double click on any image to insert it into your current slide.
 
-![Dall.E to PowerPoint](/images/Dalle2PPT.png)
+![Dall.E to PowerPoint](images/Dalle2PPT.png)
 
 
 ## Requirements
