@@ -111,7 +111,7 @@
     <Content Include="Functions\FunctionFile.html" />
     <Content Include="Functions\FunctionFile.js" />
     <Content Include="Content\Home.css" />
-    <Content Include="Home.html" />
+    <Content Include="home.html" />
     <Content Include="Images\RobotAI64x64.png" />
     <Content Include="Scripts\Home.js" />
     <Content Include="Images\AddinIcon.png" />

@@ -21,6 +21,7 @@
   <Description DefaultValue="iKan uses OpenAI to improve the quality of your documents"/>
   <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
   <IconUrl DefaultValue="https://clatonhendricks.github.io/Images/RobotAI32x32.png" />
+  <HighResolutionIconUrl DefaultValue="https://clatonhendricks.github.io/Images/RobotAI80x80.png" />
 
   <SupportUrl DefaultValue="https://github.com/clatonhendricks/OpenAI/issues/" />
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
@@ -35,7 +36,7 @@
     <Host Name="Document" />
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://clatonhendricks.github.io/Home.html" />
+    <SourceLocation DefaultValue="https://clatonhendricks.github.io/home.html" />
   </DefaultSettings>
   <!-- End TaskPane Mode integration.  -->
 
@@ -121,7 +122,7 @@
       </bt:Images>
       <bt:Urls>
         <bt:Url id="iKan.DesktopFunctionFile.Url" DefaultValue="https://clatonhendricks.github.io/Functions/FunctionFile.html" />
-        <bt:Url id="iKan.Taskpane.Url" DefaultValue="https://clatonhendricks.github.io/Home.html" />
+        <bt:Url id="iKan.Taskpane.Url" DefaultValue="https://clatonhendricks.github.io/home.html" />
         <bt:Url id="iKan.GetStarted.LearnMoreUrl" DefaultValue="https://go.microsoft.com/fwlink/?LinkId=276812" />
       </bt:Urls>
       <!-- ShortStrings max characters==125. -->
