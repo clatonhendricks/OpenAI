@@ -19,5 +19,6 @@ namespace DallePPT.Models
     {
         public long created { get; set; }
         public List<Link> data { get; set; }
+        public string StatusCode { get; set; } 
     }
 }

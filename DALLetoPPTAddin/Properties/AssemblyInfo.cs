@@ -7,7 +7,7 @@ using System.Security;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("DallePPT")]
-[assembly: AssemblyDescription("Dall.E to Powerpoint beta is created by Claton Hendricks (clatonhendricks at msn dot com)")]
+[assembly: AssemblyDescription("Dall.E to PowerPoint beta is created by Claton Hendricks (clatonhendricks at msn dot com) and its a opensource project on Github https://github.com/clatonhendricks/OpenAI")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("DallePPT")]
@@ -33,6 +33,6 @@ using System.Security;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("0.0.1.0")]
+[assembly: AssemblyFileVersion("0.0.1.0")]
 

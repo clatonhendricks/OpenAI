@@ -7,7 +7,7 @@ using System.Text;
 
 namespace DallePPT
 {
-    public partial class Ribbon1
+    public partial class RibMain
     {
         private void Ribbon1_Load(object sender, RibbonUIEventArgs e)
         {

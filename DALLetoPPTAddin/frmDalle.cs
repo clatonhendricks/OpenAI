@@ -45,11 +45,12 @@ namespace DallePPT
                 var Message = await client.
                       PostAsync("https://api.openai.com/v1/images/generations",
                       new StringContent(JsonConvert.SerializeObject(inputData),
-                      Encoding.UTF8, "application/json")); if (Message.IsSuccessStatusCode)
+                      Encoding.UTF8, "application/json")); 
+                if (Message.IsSuccessStatusCode)
                 {
                     var content = await Message.Content.ReadAsStringAsync();
                     resp = JsonConvert.DeserializeObject<DalleModel>(content);
-                }
+                } else { resp.StatusCode = Message.StatusCode.ToString(); }
             }
             
             return resp;
@@ -82,6 +83,11 @@ namespace DallePPT
                 try
                 {
                     DalleModel response = await SubmitOpenAIRequest(input, txtAPI.Text.ToString());
+                    if (response.StatusCode != null)
+                    {
+                        //MessageBox.Show(response.StatusCode, "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                        throw new InvalidOperationException(response.StatusCode.ToString());
+                    }
                     lblStatus.Visible = false;
                     lblInserttext.Visible = true;
                     picDallepic0.Visible = true;
@@ -90,7 +96,7 @@ namespace DallePPT
                     picDallepic3.Visible = true;
                     UpdatePicbox(response);
                 }
-                catch (Exception ex)
+                catch (InvalidOperationException ex)
                 {
 
                     MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
@@ -101,15 +107,23 @@ namespace DallePPT
         private void UpdatePicbox(DalleModel resp)
         {
             dalleUrl.Clear();
-            
-            for (int index = 0; index < resp.data.Count; index++)
+            try
             {
-                string ctrlName = "picDallepic" + index;
-                PictureBox obj = (PictureBox)this.Controls.Find(ctrlName, true).FirstOrDefault();
-                obj.ImageLocation = resp.data[index].url;
-                dalleUrl.Add(resp.data[index].url);
-                
+                for (int index = 0; index < resp.data.Count; index++)
+                {
+                    string ctrlName = "picDallepic" + index;
+                    PictureBox obj = (PictureBox)this.Controls.Find(ctrlName, true).FirstOrDefault();
+                    obj.ImageLocation = resp.data[index].url;
+                    dalleUrl.Add(resp.data[index].url);
+
+                }
             }
+            catch (Exception)
+            {
+                MessageBox.Show(resp.StatusCode, "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                throw;
+            }
+
         }
 
         private void picDallepic1_Click(object sender, EventArgs e)
