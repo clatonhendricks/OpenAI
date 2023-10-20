@@ -135,7 +135,6 @@ namespace DallePPT
         private void InsertImage(int n)
         {
             var imgPath = downloadImg(dalleUrl[n]);
-            //txtTest.Text = imgPath.ToString();
             try
             {
                 int SlideIndex = Globals.ThisAddIn.Application.ActiveWindow.View.Slide.SlideIndex;
@@ -204,8 +203,11 @@ namespace DallePPT
             txtAPI.Text = DalleSettings.Default.APIKey;
             cboNumImg.SelectedIndex = 0;
 
-            
-            
+            toolTip.SetToolTip(this.txtPrompt, "Double click to clear text");
+            toolTip.SetToolTip(this.lblLink, "Click to get API Key");
+            toolTip.SetToolTip(this.lblCost, "Cost per image");
+            toolTip.SetToolTip(this.txtAPI, "Enter your API key from OpenAI");
+                        
         }
 
         private void lblLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -215,6 +217,12 @@ namespace DallePPT
 
             // Navigate to a URL.
             System.Diagnostics.Process.Start("https://openai.com/api/login");
+        }
+
+
+        private void txtPrompt_DoubleClick(object sender, EventArgs e)
+        {
+            txtPrompt.Text = "";
         }
     }
 }

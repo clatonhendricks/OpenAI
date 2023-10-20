@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.picDallepic0 = new System.Windows.Forms.PictureBox();
             this.txtPrompt = new System.Windows.Forms.TextBox();
             this.btnOpenAISubmit = new System.Windows.Forms.Button();
             this.txtAPI = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtTest = new System.Windows.Forms.TextBox();
             this.lblStatus = new System.Windows.Forms.Label();
             this.cboNumImg = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,6 +44,7 @@
             this.lblInserttext = new System.Windows.Forms.Label();
             this.lblCost = new System.Windows.Forms.Label();
             this.lblLink = new System.Windows.Forms.LinkLabel();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picDallepic0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDallepic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDallepic2)).BeginInit();
@@ -64,15 +65,17 @@
             // txtPrompt
             // 
             this.txtPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrompt.Location = new System.Drawing.Point(67, 96);
+            this.txtPrompt.Location = new System.Drawing.Point(67, 87);
+            this.txtPrompt.Multiline = true;
             this.txtPrompt.Name = "txtPrompt";
-            this.txtPrompt.Size = new System.Drawing.Size(662, 21);
+            this.txtPrompt.Size = new System.Drawing.Size(662, 52);
             this.txtPrompt.TabIndex = 1;
             this.txtPrompt.Text = "A mountain landscape with northern lights in the sky and few birds flying";
+            this.txtPrompt.DoubleClick += new System.EventHandler(this.txtPrompt_DoubleClick);
             // 
             // btnOpenAISubmit
             // 
-            this.btnOpenAISubmit.Location = new System.Drawing.Point(738, 94);
+            this.btnOpenAISubmit.Location = new System.Drawing.Point(738, 99);
             this.btnOpenAISubmit.Name = "btnOpenAISubmit";
             this.btnOpenAISubmit.Size = new System.Drawing.Size(75, 23);
             this.btnOpenAISubmit.TabIndex = 2;
@@ -104,27 +107,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 97);
+            this.label2.Location = new System.Drawing.Point(12, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 15);
             this.label2.TabIndex = 5;
             this.label2.Text = "Prompt:";
-            // 
-            // txtTest
-            // 
-            this.txtTest.Location = new System.Drawing.Point(28, 389);
-            this.txtTest.Multiline = true;
-            this.txtTest.Name = "txtTest";
-            this.txtTest.Size = new System.Drawing.Size(645, 53);
-            this.txtTest.TabIndex = 6;
-            this.txtTest.Visible = false;
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(228, 137);
+            this.lblStatus.Location = new System.Drawing.Point(228, 151);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(414, 16);
             this.lblStatus.TabIndex = 7;
@@ -227,7 +221,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 386);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(849, 388);
             this.Controls.Add(this.lblLink);
             this.Controls.Add(this.lblCost);
             this.Controls.Add(this.lblInserttext);
@@ -237,7 +232,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cboNumImg);
             this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.txtTest);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAPI);
@@ -248,6 +242,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmDalle";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DALL.E to Powerpoint";
@@ -269,7 +265,6 @@
         private System.Windows.Forms.TextBox txtAPI;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtTest;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.ComboBox cboNumImg;
         private System.Windows.Forms.Label label3;
@@ -279,5 +274,6 @@
         private System.Windows.Forms.Label lblInserttext;
         private System.Windows.Forms.Label lblCost;
         private System.Windows.Forms.LinkLabel lblLink;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }
