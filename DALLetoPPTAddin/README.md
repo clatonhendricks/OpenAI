@@ -11,10 +11,8 @@ Welcome to the DALL-E to PowerPoint add-in, a seamless integration that allows u
 
 ## Installation
 1. Download the DallE2PPT<v.xxx>.zip from the releases page.
-2. Extract the .zip file to a known location.
-3. Extract the zip contents and run Setup. 
-4. Make sure you close PowerPoint before running the setup.  
-5. You should now see the DALL-E in the Addins tab.
+2. Extract the zip contents and run Setup. 
+3. You should now see the DALL-E in the Addins tab.
 
 **Note:** Make sure you close PowerPoint before running the setup  
 
@@ -25,6 +23,8 @@ Welcome to the DALL-E to PowerPoint add-in, a seamless integration that allows u
 4. Adjust the number for creations you want.
 5. Click "Submit" to send your prompt to Dall.E model to create your image. 
 6. Double click on any image to insert it into your current slide.
+
+![Dall.E to PowerPoint](/images/Dalle2PPT.png)
 
 
 ## Requirements
@@ -37,7 +37,7 @@ If the add-in isn't visible, ensure it's enabled in PowerPoint Add-Ins options.
 Make sure you have an active internet connection for seamless image generation.
 
 ## Feedback and Contributions
-We love to hear from our users! If you encounter any issues, have feature requests, or want to contribute, please open an issue on our GitHub page.
+We love to hear from you! If you encounter any issues, have feature requests, or want to contribute, please open an issue on our GitHub page.
 
 ### TODO: wish list
 - New settings dialog to set the API & resolution options
