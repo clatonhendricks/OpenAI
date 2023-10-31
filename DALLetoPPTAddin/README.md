@@ -18,11 +18,11 @@ Welcome to the DALL-E to PowerPoint add-in, a seamless integration that allows u
 
 ## How to Use
 1. Open PowerPoint and create or open a presentation.
-2. Click on the Add-ins tab in the ribbon. You should see "Dall.E 2 PPT" group.
-3. Click on "Dream Image" and enter your desired image description in the input box (you can double click to clear the text in the prompt box).
-4. Adjust the number for creations you want.
+2. Click on the Add-ins tab in the ribbon. You should see the "Dall.E 2 PPT" group.
+3. Click on "Dream Image" and enter your desired image description in the input box (you can double-click to clear the text in the prompt box).
+4. Adjust the number of creations you want.
 5. Click "Submit" to send your prompt to Dall.E model to create your image. 
-6. Double click on any image to insert it into your current slide.
+6. Double-click on any image to insert it into your current slide.
 
 ![Dall.E to PowerPoint](images/Dalle2PPT.png)
 
@@ -41,8 +41,8 @@ We love to hear from you! If you encounter any issues, have feature requests, or
 
 ### TODO: wish list
 - New settings dialog to set the API & resolution options
-- Options to choose e.g. Resolutions & change costing per resolutions. Currently by default its at 256x256 resolution 
+- Options to choose e.g. Resolutions & change costing per resolution. Currently by default it's at 256x256 resolution 
 - Dropdown/checkbox for design styles 
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This software is licensed under the GNU GENERAL PUBLIC LICENSE. Refer to LICENSE for more details.
