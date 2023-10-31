@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="iKan"
-     ProductID="{32f273cd-6e81-412f-aba9-b8a37a7fa0de}"
+     ProductID="{faae75df-f446-4745-9236-35dc0c31be66}"
      Version="1.0.0.0"
      SharePointMinVersion="15.0.0.0"
 >
