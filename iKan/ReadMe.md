@@ -36,7 +36,7 @@ We welcome your feedback! Please raise any issues or suggestions on our [GitHub 
 
 ## License
 
-This software is licensed under the GNU GENERAL PUBLIC LICENSE. Refer to [LICENSE.md](../LICENSE.md) for more details.
+This software is licensed under the GNU GENERAL PUBLIC LICENSE. Refer to [LICENSE.md](../LICENSE) for more details.
 
 
 
