@@ -1,4 +1,10 @@
-#Welcome to my OpenAI experiments
+# Welcome to my OpenAI experiments
+
+[![GitHub license](https://img.shields.io/github/license/clatonhendricks/OpenAI.svg)](https://github.com/clatonhendricks/OpenAI/blob/main/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![GitHub watchers](https://img.shields.io/github/watchers/clatonhendricks/OpenAI.svg?style=social&label=Watch)](https://GitHub.com/clatonhendricks/OpenAI/watchers/)
+[![GitHub forks](https://img.shields.io/github/forks/clatonhendricks/OpenAI.svg?style=social&label=Fork)](https://GitHub.com/clatonhendricks/OpenAI/network/)
+[![GitHub stars](https://img.shields.io/github/stars/clatonhendricks/OpenAI.svg?style=social&label=Star)](https://GitHub.com/clatonhendricks/OpenAI/stargazers/)
 
 I created this repo just to play around with OpenAI and seek opportunities to create something helpful. Having a hacker mindset, I tend to create something that shows proof of concept. What this means is you may not find the best coding practices, error handling, proper installation packages etc. Does the code work **Yes!** Is this something you can take from releases and package and sell, absolutely **No!**. 
 Regardless, everything you see is under GNU License, please read it carefully, for more clarification check it out [here](https://choosealicense.com/licenses/gpl-3.0/#)
